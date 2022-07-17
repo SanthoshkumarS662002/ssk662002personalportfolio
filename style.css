@@ -1,0 +1,375 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style:none;
+    box-sizing:border-box;
+  }
+  body{
+    font-family: 'Questrial','Arima Madurai', cursive;
+    font-size: 18px;
+  
+  }
+  .heading{
+    font-family:  'Poppins',sans-serif;
+    color: #152cf7;
+   
+  }
+  .heading2{
+    font-family: 'Poppins','Bungee Shade', cursive;
+    font-size: 50px;
+    line-height: 25px;
+    color: #152cf7;
+  }
+  .heading:hover{
+    background-color: #152cf7;
+    color: white;
+    
+
+  }
+  .heading2:hover{
+   
+   animation: glowAnimation;
+   animation-duration: 2s;
+   animation-iteration-count: infinite;
+  }
+  @keyframes glowAnimation{
+    0%{text-shadow: 0px 0px 20px #152cf7;} 
+    50%{text-shadow: 0px 5px 20px white;}
+    100%{text-shadow: 0px 0px 20px #152cf7;} 
+  }
+  #name{
+    color: #152cf7;
+    font-family: 'Poppins';
+    letter-spacing: 1px;
+  }
+  #name:hover{
+    background-color: #152cf7;
+    color: white;
+  }
+  p{
+    letter-spacing: 3px;
+    line-height: 30px;
+  }
+  nav{
+    background: #0082e6;
+    height: 80px;
+    width: 100%;
+    position: sticky;
+  }
+  label.logo{
+    color: white;
+    font-size: 30px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight:100 ;
+    font-family: 'Fredoka One', 'Poppins',sans-serif;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+ 
+  }
+  nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    
+    
+  }
+  /*full screen size hover*/
+  a.active,a:hover{
+    background: #ffffff;
+    transition: .75s;
+    border-style: hidden ;
+    border-width: 1px;
+    color: #0082e6;
+    animation: hoverAnimation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  @keyframes hoverAnimation{
+    0%{color: #0082e6;}
+    10%{color:#231fff;}
+    20%{color: #0082e6;}
+    30%{color:#231fff;}
+    40%{color: #0082e6;}
+    50%{color:#231fff;}
+    60%{color: #0082e6;}
+    70%{color:#231fff;}
+    80%{color: #0082e6;}
+    90%{color:#231fff;}
+    100%{color: #0082e6;}
+    
+   
+  }
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+  #check{
+    display: none;
+  }
+  @media (max-width: 952px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+    nav ul li a{
+      font-size: 16px;
+    }
+  }
+  @media (max-width: 858px){
+    .checkbtn{
+      display: block;
+    }
+    ul{
+      position: fixed;
+      width: 100%;
+      height: 100vh;
+      background: #2c3e50;
+      top: 80px;
+      left: -100%;
+      text-align: center;
+      transition: all .5s;
+    }
+    nav ul li{
+      display: block;
+      margin: 50px 0;
+      line-height: 30px;
+    }
+    nav ul li a{
+      font-size: 20px;
+    }
+    /*hover*/
+    a:hover,a.active{
+      background: none;
+      color: #0082e6;
+      background-color: #ffffff
+
+    }
+    #check:checked ~ ul{
+      left: 0;
+    }
+  }
+  section{
+    background:url(bg1.jpg)no-repeat ;
+    background-size: cover;
+    height: calc(100vh-80px);
+  }
+  /***********************NAV SECTION END*******************************/
+
+  /*image css style*/
+ .image{
+  width: 200px;
+  float: right;
+  margin: 2px;
+  transition: 1s;
+  
+ }
+ .image:hover{
+  transform: scale(1.03);
+ }
+
+ .heading{
+  font-size: 50px;
+ }
+ .heading2{
+  font-size: 25px;
+ }
+ .content{
+ padding: 25px;
+ position:left;
+ text-align: justify;
+
+ }
+ /*GLOWING BUTTON*/
+ .glowbtn{
+  
+  background:#231fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color:white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+  
+ }
+ .glowbtn:hover{
+  color: #231fff;
+  background: white;
+  box-shadow: 0 0 10px #231fff,0 0 20px #231fff,0 0 60px #231fff,0 0 120px #231fff;
+  animation: none;
+  letter-spacing: 0.05em;
+ }
+ /* aboutme background img*/
+ #aboutMe{
+  color: white;
+  background:url("bgimg.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:650px 700px;
+  background-attachment: fixed;
+  
+ 
+ }
+ #aboutMeBody{
+  font-family:  'Poppins','Fredoka One',sans-serif;
+  color: black;
+ }
+ .skillheading{
+  color:  black;
+  text-align: center;
+  margin-top: 40px;
+  font-size: 45px;
+  padding:1px 1px 1px 50%;
+ }
+
+ .skillheading:hover{
+  color:#0082e6;
+  text-shadow: 0px 0px 50px black;
+
+ }
+ .skills-area{
+ 
+  display: flex;
+  flex-direction: column;
+  padding:2% 2% 2px 50%;
+
+ }
+
+ .skill{
+  position: relative;
+  margin-bottom: 40px;
+ }
+ .skill-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+ }
+ .skill-bar{
+  width: 100%;
+  background:grey;
+  height: 30px;
+  z-index: -1;
+  border-radius: 100px;
+  position: absolute;
+ }
+ .skill-fill{
+  background:#0082e6;
+  height: 30px;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 30px;
+  overflow: hidden;
+ }
+ .skill-percent{
+  font-size: 20px;
+ }
+ .html{
+  animation: html 2s;
+  width: 80%;
+ }
+ .css{
+  animation: css 2s;
+  width: 70%;
+ }
+ .js{
+  animation: js 2s;
+  width: 30%;
+ }
+ .java{
+  animation: java 2s;
+  width: 70%;
+ }
+ @keyframes html{
+  from{
+    width: 0;
+  }
+  to{
+    width: 80%;
+  }
+ }
+ @keyframes css{
+  from{
+    width: 0;
+  }
+  to{
+    width: 70%;
+  }
+ }
+ @keyframes js{
+  from{
+    width: 0;
+  }
+  to{
+    width: 30%;
+  }
+ }
+ @keyframes java{
+  from{
+    width: 0;
+  }
+  to{
+    width: 70%;
+  }
+ }
+ @media only screen and (max-width:750px){
+  .skills-area{
+    padding: 0 5%;
+  }
+ }
+ 
+ .skills-area li:before{
+  content: "\2022 \00A0";
+  color: #152cf7;
+ }
+
+ #aboutmeBtn{
+  
+  background:#231fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 20px;
+  color:white;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px;
+  float:right;
+  
+ }
+ #aboutmeBtn:hover{
+  color: #231fff;
+  background: white;
+  box-shadow: 0 0 10px #231fff,0 0 20px #231fff,0 0 60px #231fff,0 0 120px #231fff;
+  animation: none;
+  letter-spacing: 0.05em;
+  
+ }
+
+ 
+
+
+
+
+
+
+
+

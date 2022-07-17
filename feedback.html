@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+    </style>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@800&display=swap');
+    </style>
+</head>
+<body>
+  <style>
+    body{
+    
+      display: grid;
+      place-items: center;
+      font-family:'Poppins', sans-serif;
+    }
+    #headingContact{
+      margin-bottom: 2rem;
+    }
+    #contactform{
+      display: flex;
+      flex-direction: column;
+      width: 24rem;
+      gap: 1rem;
+    }
+    input,select,textarea{
+      padding:1.4rem ;
+      background: transparent;
+      border: 1px solid black;
+      border-radius: 5px;
+      font-family:'Poppins', sans-serif;
+    }
+    textarea{
+      height: 10rem;
+    }
+    button{
+      width: 8rem;
+      height: 4rem;
+      padding: 0;
+      cursor: pointer;
+      background-color: #231fff;
+      color: white;
+      font-size: 30px;
+      align-items: center;
+      border-radius: 50px;
+      font-family:'Poppins', sans-serif;
+    }
+    button:hover{
+      background-color: white;
+      color:#231fff ;
+    }
+  </style>
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo">Personal Portfolio</label>
+        <ul>
+          <li><a  href="index.html">Home</a></li>
+          <li><a  href="aboutme.html">About Me</a></li>
+          <li><a  href="contactme.html">Contact Me</a></li>
+          <li><a class="active" href="feedback.html">Feedback</a></li>
+        </ul>
+      </nav>
+
+      <h1 id="headingContact">Contact Form</h1>
+      <form id="contactform" action="https://formspree.io/f/myyorynz" method="POST" >
+        <input type="text" name="Name" placeholder="Full Name" required><br>
+        <input type="email" name="Email" placeholder="Email" required><br>
+        <select name="Continent">
+          <option>India</option>
+          <option>Other</option>
+        </select><br>
+        <textarea name="Message" placeholder="Feedback or comment" required></textarea><br>
+        <button type="submit">Send</button><br>
+      </form>
+      
+    
+</body>
+</html>
